@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Chat {
+  string name = 1;
+  string content = 2;
+  string ps = 3;
+}
