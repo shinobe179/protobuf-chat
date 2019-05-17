@@ -10,7 +10,7 @@ def socket_handler(me, use_ip, use_port):
     s.listen(1)
     print('[*] Ready to listen.')
     soc, addr = s.accept()
-    print('[*] Connected by ' + str(addr) + '.')
+    print('[*] Connected by {}:{}.'.format(addr[0], addr[1]))
 
     while(1):
         me.content = input('Server> ')

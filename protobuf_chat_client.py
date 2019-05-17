@@ -8,6 +8,7 @@ def socket_handler(me, dst_ip, dst_port):
 
     soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     soc.connect((dst_ip, dst_port))
+    print('[*] Connect to {}:{}.'.format(dst_ip, dst_port))
 
     while(1):
         raw_recv_data = soc.recv(1024)
