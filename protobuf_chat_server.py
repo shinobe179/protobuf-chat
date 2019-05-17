@@ -25,7 +25,7 @@ def socket_handler(me, use_ip, use_port):
             print('[*] Bye.')
             soc.close()
             break
-        print('Client> ', recv_data)
+        print('Client>', recv_data)
 
 def main():
     # argparse

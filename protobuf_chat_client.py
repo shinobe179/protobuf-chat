@@ -21,7 +21,7 @@ def socket_handler(me, dst_ip, dst_port):
         #    soc.close()
         #    break
         send_data = me.SerializeToString()
-        print('raw send data: ', send_data)
+        print('raw send data:', send_data)
         soc.send(send_data)
         if me.content == 'bye':
             print('[*] Bye.')
